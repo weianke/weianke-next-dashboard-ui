@@ -1,6 +1,5 @@
 import Announcements from "@/components/Announcements";
 import BigCalender from "@/components/BigCalender";
-import EventCalendar from "@/components/EventCalendar";
 
 const TeacherPage = () => {
   return (
@@ -14,7 +13,6 @@ const TeacherPage = () => {
       </div>
       {/* RIGHT  */}
       <div className="w-full lg:w-1/3 flex flex-col gap-8">
-        <EventCalendar />
         <Announcements />
       </div>
     </div>
