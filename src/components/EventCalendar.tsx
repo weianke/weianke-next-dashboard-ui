@@ -1,9 +1,10 @@
 "use client";
+import { format } from "date-fns";
+import { zhCN } from "date-fns/locale";
 import Image from "next/image";
 import { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-
 type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 // TEMPORARY
@@ -32,7 +33,15 @@ const EventCalendar = () => {
   const [value, setValue] = useState<Value>(new Date());
   return (
     <div className="bg-white p-4 rounded-md">
-      <Calendar onChange={setValue} value={value} />
+      <Calendar
+        onChange={setValue}
+        value={value}
+        locale="zh-CN"
+        formatMonthYear={(locale, date) =>
+          format(date, "yyyy年MM月", { locale: zhCN })
+        }
+        formatDay={(locale, date) => format(date, "d")}
+      />
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold my-4">Events</h1>
         <Image src="/moreDark.png" alt="more" width={20} height={20} />
