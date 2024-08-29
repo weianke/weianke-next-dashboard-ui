@@ -2,13 +2,8 @@ import Menu from "@/components/Menu";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
-import AdminPage from "./(dashboard)/admin/page";
 
-export default function HomeLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function Home() {
   return (
     <div className="h-screen flex">
       {/* Left */}
@@ -25,7 +20,9 @@ export default function HomeLayout({
       {/* Right */}
       <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll">
         <Navbar />
-        <AdminPage />
+        <h1 className="text-3xl font-bold text-center p-4">
+          welcome to dashboard
+        </h1>
       </div>
     </div>
   );
