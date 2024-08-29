@@ -81,6 +81,11 @@
   width: 99% !important;
 }
 
+/* 当前进行中的横条颜色 */
+/* .rbc-current-time-indicator {
+  background-color: #31a0ad !important;
+} */
+
 .rbc-event:nth-child(1) {
   background-color: #e2f8ff !important;
 }

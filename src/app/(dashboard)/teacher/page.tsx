@@ -3,11 +3,11 @@ import BigCalender from "@/components/BigCalender";
 
 const TeacherPage = () => {
   return (
-    <div className="p-4 flex gap-4 flex-col xl:flex-row">
+    <div className="flex-1 p-4 flex gap-4 flex-col xl:flex-row">
       {/* LEFT */}
-      <div className="w-full h-[60vh] xl:w-2/3 xl:h-[70vh]">
+      <div className="w-full  xl:w-2/3">
         <div className="h-full bg-white p-3 rounded-md">
-          <h1 className="text-xl font-semibold">Schedule (4A)</h1>
+          <h1 className="text-xl font-semibold">Schedule</h1>
           <BigCalender />
         </div>
       </div>
