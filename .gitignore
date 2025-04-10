@@ -32,6 +32,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+#.czvinylrc
+.czvinylrc
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
